@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron Delate - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="WDD 230 - Web Frontend Development - Aaron Delate's course assignment portal">
+  <meta name="author" content="Aaron Delate">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/profile.jpg" alt="Aaron Delate" width="100">
+      <span class="name-header">Aaron Delate</span>
+    </header>
+    <nav>
+      <a href="#" class="active-nav-link">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">Site Plan</a>
+      <a href="#">Form</a>
+    </nav>
+    <main>
+      <h1>WDD 230: Web Frontend Development</h1>
+      <hr>
+      <div class="card-grid">
+        <section class="card">
+          <h2>Learning Activities</h2>
+          <ul>
+            <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
+            <li>Week 02:</li>
+            <li>Week 03:</li>
+            <li>Week 04:</li>
+            <li>Week 05:</li>
+            <li>Week 06:</li>
+            <li>Week 07:</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Information</h2>
+          <p class="text-center">Johannesburg, South Africa</p>
+          <p class="text-center">27°C - Sunny</p>
+          <p class="text-center">Page visits: 1</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> - Aaron Delate - South Africa
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </div>
+  <script src="scripts/getDates.js"></script>
+</body>
+</html>
