@@ -71,10 +71,12 @@ pre {
 
 /**
  * Remove the gray background on active links in IE 10.
+ * Remove underlines on links, this counts as custom.
  */
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
