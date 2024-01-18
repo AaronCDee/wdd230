@@ -17,4 +17,8 @@
   .container footer {
     width: 768px;
   }
+
+  .menu {
+    display: none;
+  }
 }

@@ -6,6 +6,24 @@
   --tertiary-color: #001524;
 }
 
+:root[data-color-mode="light"] {
+  --main-bg: white;
+  --main-color: var(--tertiary-color);
+  --card-bg: white;
+  --card-header-bg: var(--tertiary-color);
+  --card-header-color: white;
+  --card-color: var(--tertiary-color);
+}
+
+:root[data-color-mode="dark"] {
+  --main-bg: var(--tertiary-color);
+  --main-color: white;
+  --card-bg: lightgray;
+  --card-header-bg: var(--secondary-color);
+  --card-header-color: var(--tertiary-color);
+  --card-color: var(--tertiary-color);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +32,7 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--main-bg);
 }
 
 .card {
@@ -21,13 +40,14 @@ body {
   transition: 0.3s;
   width: 100%;
   border-radius: 10px;
+  background-color: var(--card-bg);
 }
 
 main .card h2 {
   margin: 0;
   padding: 0;
-  color: white;
-  background-color: var(--tertiary-color);
+  color: var(--card-header-color);
+  background-color: var(--card-header-bg);
   width: 100%;
   padding: 5px 10px;
   border-radius: 10px 10px 0px 0px;
@@ -36,6 +56,7 @@ main .card h2 {
 }
 
 .container {
+  position: relative;
   max-width: 768px;
   margin: auto;
   position: relative;
@@ -43,7 +64,7 @@ main .card h2 {
 }
 
 nav {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -85,10 +106,12 @@ header img {
 
 main {
   padding: 1em;
+  min-height: 70vh;
+  background-color: var(--main-bg);
 }
 
 main h1 {
-  color: var(--tertiary-color);
+  color: var(--main-color);
   font-weight: 200;
   margin: 0;
   font-size: 1.5em;
@@ -128,4 +151,40 @@ ul li {
 
 .text-center {
   text-align: center;
+}
+
+.menu {
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.burger, .xmark, .circle-half-stroke {
+  fill: white;
+}
+
+.open-menu {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.dark-mode-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+.dark-mode-btn:hover {
+  cursor: pointer;
 }
