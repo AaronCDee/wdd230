@@ -18,23 +18,23 @@
 <body>
   <div class="container">
     <header>
-      <img src="images/profile.jpg" alt="Aaron Delate" width="100">
+      <img src="images/profile.webp" alt="Aaron Delate" width="100" height="133" loading="lazy">
       <span class="name-header">Aaron Delate</span>
-    </header>
-    <div id="dark-mode-btn" class="dark-mode-btn">
-      <svg class="circle-half-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/>
-      </svg>
-    </div>
-    <div id="menu-btn" class="menu">
-      <svg id="burger-icon" class="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-      </svg>
+      <div id="dark-mode-btn" class="dark-mode-btn">
+        <svg class="circle-half-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/>
+        </svg>
+      </div>
+      <div id="menu-btn" class="menu">
+        <svg id="burger-icon" class="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
 
-      <svg id="xmark-icon" class="xmark hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
-      </svg>
-    </div>
+        <svg id="xmark-icon" class="xmark hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+        </svg>
+      </div>
+    </header>
     <nav id="nav-menu">
       <a href="#" class="active-nav-link">Home</a>
       <a href="chamber">Chamber</a>
@@ -42,6 +42,16 @@
       <a href="#">Form</a>
     </nav>
     <main>
+      <div class="hero">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/temple-small.webp">
+          <source media="(max-width: 960px)" srcset="images/temple-medium.webp">
+          <img src="images/temple-medium.webp" alt="Duban, South Africa Temple" width="768" height="609" loading="lazy">
+          <div class="hero-label">
+            <p>Durban, South Africa Temple</p>
+          </div>
+        </picture>
+      </div>
       <h1>WDD 230: Web Frontend Development</h1>
       <hr>
       <div class="card-grid">
@@ -64,16 +74,19 @@
           <p class="text-center">Page visits: 1</p>
         </section>
       </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114641.46049607813!2d27.879697113890263!3d-26.11374653979216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574b0839fe795%3A0x4443ba51b0acaf0d!2sRandburg!5e0!3m2!1sen!2sza!4v1706199862330!5m2!1sen!2sza" width="768" height="576" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
       <p>
         &copy; <span id="currentYear"></span> - Aaron Delate - South Africa
       </p>
       <p id="lastModified"></p>
+      <p id="pageVisits"></p>
     </footer>
   </div>
   <script src="scripts/burgerMenu.js"></script>
   <script src="scripts/darkMode.js"></script>
   <script src="scripts/getDates.js"></script>
+  <script src="scripts/pageVisits.js"></script>
 </body>
 </html>
