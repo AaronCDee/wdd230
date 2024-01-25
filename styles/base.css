@@ -18,7 +18,7 @@
 :root[data-color-mode="dark"] {
   --main-bg: var(--tertiary-color);
   --main-color: white;
-  --card-bg: lightgray;
+  --card-bg: white;
   --card-header-bg: var(--secondary-color);
   --card-header-color: var(--tertiary-color);
   --card-color: var(--tertiary-color);
@@ -56,10 +56,10 @@ main .card h2 {
 }
 
 .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   max-width: 768px;
   margin: auto;
-  position: relative;
   min-height: 100vh;
 }
 
@@ -92,6 +92,7 @@ header {
   grid-template-columns: 0.7fr 1.3fr;
   align-items: center;
   padding: 1em;
+  position: relative;
 }
 
 header span {
@@ -105,7 +106,6 @@ header img {
 }
 
 main {
-  padding: 1em;
   min-height: 70vh;
   background-color: var(--main-bg);
 }
@@ -122,7 +122,7 @@ main .card-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  padding-bottom: 5.5em;
+  padding: 1em;
 }
 
 .active-nav-link {
@@ -132,11 +132,9 @@ main .card-grid {
 .container footer {
   background-color: var(--tertiary-color);
   color: white;
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   width: 100%;
   text-align: center;
-  height: 5.5em;
 }
 
 ul {
@@ -187,4 +185,32 @@ ul li {
 
 .dark-mode-btn:hover {
   cursor: pointer;
+}
+
+.hero-label {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  color: whitesmoke;
+  background-color: rgba(0, 21, 36, 0.2);
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  padding: 0 1em 1em 1em;
+  box-sizing: border-box;
 }
