@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   localStorage.setItem(pageVisitsKey, pageVisits);
 
-  pageVisitsEl.innerHTML = `Page has been visited ${pageVisits} times!!!`;
+  pageVisitsEl.innerHTML = pageVisits;
 });
