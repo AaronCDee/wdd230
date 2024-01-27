@@ -204,3 +204,7 @@ nav a:hover {
   height: auto;
   text-align: center;
 }
+
+.self-center {
+  align-self: center;
+}
