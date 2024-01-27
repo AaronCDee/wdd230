@@ -45,4 +45,18 @@
     gap: 20px;
   }
 
+  .discover-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    width: 100%;
+  }
+
+  #images-of-interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .interest-img-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  }
 }

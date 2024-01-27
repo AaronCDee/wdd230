@@ -1,21 +1,37 @@
 // Your JavaScript code goes here
 document.addEventListener("DOMContentLoaded", function() {
-  // Get the current date
-  const currentDate = new Date();
+  const currentDate    = new Date();
+  const formattedDate  = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(currentDate);
+  const burgerMenu     = document.getElementById('burger-menu');
+  const navLinks       = document.querySelector('.nav-links');
+  const lastVisitedKey = "lastVisited";
+  const welcomeEl      = document.getElementById('welcome');
 
-  // Format the date as "Month day, year"
-  const formattedDate = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(currentDate);
+  let lastVisited    = currentDate;
+  let lastVisitedMsg = "Welcome! Let us know if you have any questions."
 
-  // Display the formatted date in the last-updated-date element
   document.getElementById('last-updated-date').innerText = formattedDate;
 
-  // Get elements
-  const burgerMenu = document.getElementById('burger-menu');
-  const navLinks   = document.querySelector('.nav-links');
-
-  // Toggle navigation on burger menu click
   burgerMenu.addEventListener('click', function() {
       navLinks.classList.toggle('show-nav');
       burgerMenu.innerHTML = (burgerMenu.innerHTML === '☰') ? '✕' : '☰';
   });
+
+  if (Object.keys(localStorage).includes(lastVisitedKey)) {
+    lastVisited = new Date(localStorage.getItem(lastVisitedKey));
+
+    if ((currentDate.getTime() - lastVisited.getTime()) < (1000 * 60 * 60 * 24)) {
+      lastVisitedMsg = "Back so soon! Awesome!";
+    }
+
+    if ((currentDate.getTime() - lastVisited.getTime()) > (1000 * 60 * 60 * 24)) {
+      let dayDiff = (currentDate.getTime() - lastVisited.getTime()) / (1000 * 60 * 60 * 24);
+
+      lastVisitedMsg = `You last visited ${parseInt(dayDiff)} days ago.`;
+    }
+  }
+
+  welcomeEl.innerText = lastVisitedMsg;
+
+  localStorage.setItem(lastVisitedKey, currentDate);
 });

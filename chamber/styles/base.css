@@ -160,3 +160,47 @@ nav a:hover {
 .px-20 {
   padding: 0 20px;
 }
+
+.discover-grid {
+  grid-template-columns: 1fr;
+}
+
+#images-of-interest {
+  padding: 1em 0;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.interest-img-container {
+  position: relative;
+  height: fit-content;
+}
+
+.interest-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.interest-img-container .img-label {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: white;
+  background-color: rgba(73, 88, 103, 0.5);
+  padding: 2em;
+  border-radius: 15px;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.calendar {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
