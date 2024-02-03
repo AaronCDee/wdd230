@@ -134,6 +134,7 @@ nav a:hover {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   margin-bottom: 20px;
+  padding: 1em;
 }
 
 .card:hover {
@@ -207,4 +208,57 @@ nav a:hover {
 
 .self-center {
   align-self: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input, select, textarea {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1em;
+}
+
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  gap: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-button {
+  padding: 7px;
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 2px;
+}
+
+.form-button:hover {
+  background-color: hsl(210, 17%, 40%);
+  cursor: pointer;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
