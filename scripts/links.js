@@ -19,7 +19,7 @@ async function fetchLinks() {
 }
 
 const displayLinks = (weeks) => {
-  let links = weeks.map(week => `<li>${week.week}: ${week.links.map(link => `<a href="${baseURL}${link.url}">${link.title}</a>`).join(" | ")}</li>`).join("");
+  let links = weeks.map(week => `<li>${week.week}: ${week.links.map(link => `<a href="${link.url}">${link.title}</a>`).join(" | ")}</li>`).join("");
 
   courseLinksEl.innerHTML = links;
 }
