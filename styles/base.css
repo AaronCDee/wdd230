@@ -214,3 +214,12 @@ ul li {
   padding: 0 1em 1em 1em;
   box-sizing: border-box;
 }
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  padding: 1em;
+}

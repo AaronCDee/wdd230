@@ -1,0 +1,81 @@
+{
+  "weeks": [
+    {
+      "week": "Week 01",
+      "links": [
+        {
+          "url":"#",
+          "title":"Layout"
+        },
+        {
+          "url":"#",
+          "title":"Media Query"
+        },
+        {
+          "url":"#",
+          "title":"JS Pen"
+        }
+      ]
+    },
+    {
+      "week": "Week 02",
+      "links": [
+        {
+          "url":"https://codepen.io/Aaron-chase96/pen/eYXWJjZ",
+          "title":"Hamburger Menu"
+        },
+        {
+          "url":"week02/bom.html",
+          "title":"Bom Top 10"
+        }
+      ]
+    },
+    {
+      "week": "Week 03",
+      "links": [
+        {
+          "url":"week03/images/landscape.webp",
+          "title":"WebP"
+        },
+        {
+          "url":"week03/lazyload.html",
+          "title":"Lazyload"
+        }
+      ]
+    },
+    {
+      "week": "Week 04",
+      "links": [
+      ]
+    },
+    {
+      "week": "Week 05",
+      "links": [
+        {
+          "url":"https://codepen.io/Aaron-chase96/pen/PoLdNrM",
+          "title":"Pseudo-Elements"
+        },
+        {
+          "url":"week05/new-ward-members.json",
+          "title":"JSON"
+        },
+        {
+          "url":"week05/prophets.html",
+          "title":"Fetch API"
+        },
+        {
+          "url":"week05/weather.html",
+          "title":"Weather"
+        }
+      ]
+    },
+    {
+      "week": "Week 06",
+      "links": []
+    },
+    {
+      "week": "Week 07",
+      "links": []
+    }
+  ]
+}
