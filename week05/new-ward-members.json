@@ -1,0 +1,13 @@
+{
+  "familyName": "Delate",
+  "movedInAt": "2024-02-08",
+  "numberOfFamilyMembers": 1,
+  "visitedByBishopric": false,
+  "familyMembers": [
+    {
+      "name": "Aaron",
+      "gender": "male",
+      "birthdate": "1996-12-20"
+    }
+  ]
+}
