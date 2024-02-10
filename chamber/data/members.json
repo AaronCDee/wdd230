@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Tech Innovators Inc.",
+      "address": "789 Tech Street, Innovation City",
+      "phone": "555-123-4567",
+      "website": "http://www.techinnovators.com",
+      "image": "tech_innovators.svg",
+      "membership_level": "Platinum",
+      "other_information": "Leading the way in technological innovation."
+    },
+    {
+      "name": "Global Services Co.",
+      "address": "456 Service Avenue, Solutions Town",
+      "phone": "555-987-6543",
+      "website": "http://www.globalservicesco.com",
+      "image": "global_services.svg",
+      "membership_level": "Gold",
+      "other_information": "Providing global business solutions."
+    },
+    {
+      "name": "Foodie Delights Ltd.",
+      "address": "321 Culinary Lane, Tasty City",
+      "phone": "555-345-6789",
+      "website": "http://www.foodiedelights.com",
+      "image": "foodie_delights.svg",
+      "membership_level": "Silver",
+      "other_information": "Delivering delicious experiences to food enthusiasts."
+    },
+    {
+      "name": "Green Energy Solutions Corp.",
+      "address": "555 Eco Drive, Sustainableville",
+      "phone": "555-789-0123",
+      "website": "http://www.greenenergysolutions.com",
+      "image": "green_energy.svg",
+      "membership_level": "Gold",
+      "other_information": "Pioneering sustainable energy solutions for a better future."
+    },
+    {
+      "name": "Fashion Trends Co.",
+      "address": "123 Style Street, Chic City",
+      "phone": "555-234-5678",
+      "website": "http://www.fashiontrendsco.com",
+      "image": "fashion_trends.svg",
+      "membership_level": "Bronze",
+      "other_information": "Setting the latest fashion trends globally."
+    },
+    {
+      "name": "Health Harmony Ltd.",
+      "address": "789 Wellness Avenue, Fitville",
+      "phone": "555-876-5432",
+      "website": "http://www.healthharmony.com",
+      "image": "health_harmony.svg",
+      "membership_level": "Silver",
+      "other_information": "Promoting health and well-being for all."
+    },
+    {
+      "name": "Travel Explorers Inc.",
+      "address": "555 Adventure Road, Wanderland",
+      "phone": "555-321-0987",
+      "website": "http://www.travelexplorers.com",
+      "image": "travel_explorers.svg",
+      "membership_level": "Platinum",
+      "other_information": "Embarking on unforgettable journeys around the world."
+    }
+  ]
+}

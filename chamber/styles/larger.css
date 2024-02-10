@@ -64,4 +64,10 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
   }
+
+  .member-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1024px;
+    margin: auto;
+  }
 }
