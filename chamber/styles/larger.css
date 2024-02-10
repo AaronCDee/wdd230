@@ -70,4 +70,8 @@
     max-width: 1024px;
     margin: auto;
   }
+  .member-line-item {
+    grid-template-columns: repeat(6,1fr);
+    gap: 1em;
+  }
 }

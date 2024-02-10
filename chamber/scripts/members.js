@@ -20,7 +20,7 @@ async function fetchMembers() {
 
 const displayMembers = (members) => {
   let memberHTML = members.map(member => {
-    return `<div class="card">
+    return `<div class="card member">
               <div class="member-card-header">
                 <h3>${member.name}</h3>
                 <img src="./images/${member.image}" width="50" height="50">
@@ -28,7 +28,7 @@ const displayMembers = (members) => {
               <p>Address: ${member.address}</p>
               <p>Phone: ${member.phone}</p>
               <p>Membership level: ${member.membership_level}</p>
-              <p>Other Info: ${member.other_information}</p>
+              <p class="other-info">Other Info: ${member.other_information}</p>
               <a href="${member.website}">Website</a>
             </div>`
   }).join("");
@@ -39,6 +39,13 @@ const displayMembers = (members) => {
 memberGridToggle.addEventListener("click", () => {
   memberGridEl.classList.toggle("member-grid");
   memberGridEl.classList.toggle("member-column");
+
+  let members = document.getElementsByClassName("member");
+
+  Array.from(members).forEach(memberEl => {
+    memberEl.classList.toggle("card");
+    memberEl.classList.toggle("member-line-item");
+  });
 });
 
 // Main

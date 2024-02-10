@@ -265,7 +265,7 @@ nav a:hover {
 
 .member-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
   column-gap: 1em;
   padding: 1em;
@@ -276,8 +276,8 @@ nav a:hover {
   grid-template-columns: 1fr;
   width: 100%;
   column-gap: 1em;
-  max-width: 400px;
   margin: auto;
+  padding: 1em;
 }
 
 .member-header {
@@ -304,4 +304,13 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
   align-items: center;
+}
+
+.member-line-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid #061826;
+  border-top: 1px solid #061826;
+  align-items: center;
+  padding: 1em;
 }
