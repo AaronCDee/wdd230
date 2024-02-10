@@ -45,7 +45,7 @@ memberGridToggle.addEventListener("click", () => {
   Array.from(members).forEach(memberEl => {
     memberEl.classList.toggle("card");
     memberEl.classList.toggle("member-line-item");
-    memberEl.classList.toggle("text-center");
+    memberEl.querySelector("img").classList.toggle("hidden");
   });
 });
 
