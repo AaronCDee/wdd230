@@ -31,10 +31,13 @@ const displayMemberSpotlights = (members) => {
   members.forEach(member => {
     spotlightHTML += `
       <div class="card p-20">
-        <h3 class="member-card-header">${member.name} <span><img src="${memberImgURL + member.image}" width="50" height="50"></span></h3>
+        <div class="member-card-header">
+          <h3>${member.name}</h3>
+          <img src="${memberImgURL + member.image}" width="50" height="50">
+        </div>
         <p>${member.other_information}</p>
         <p>Phone: ${member.phone}</p>
-        <p><a href="https://google.com" target="_blank">${member.website}</a></p>
+        <p><a href="https://google.com" target="_blank" class="break-all">${member.website}</a></p>
       </div>
     `
   });

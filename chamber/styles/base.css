@@ -364,3 +364,7 @@ nav a:hover {
 .nav-active {
   background-color: var(--accent1-alpha);
 }
+
+.break-all {
+  word-break: break-all;
+}
