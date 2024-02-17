@@ -35,6 +35,10 @@
   </nav>
 
   <main>
+    <section id="banner" class="banner hidden">
+      <h2>Join us for a chamber meet and greet on Wednesday evening at 7pm!</h2>
+      <button id="banner-button">╳</button>
+    </section>
     <section id="hero">
       <img class="hero-img" src="images/austin.jpg" alt="hero-img">
       <div class="hero-info">
@@ -44,7 +48,9 @@
         <p class="p-primary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button type="button" class="btn-primary">Join the Chamber</button>
+        <a href="./join.html">
+          <button type="button" class="btn-primary">Join the Chamber</button>
+        </a>
       </div>
     </section>
     <div class="content-container grid grid-col-3">
@@ -61,22 +67,20 @@
       <section id="weather-card" class="card p-20">
         <h2>Weather Info</h2>
         <hr style="background-color: black;">
-        <p class="text-center">Austin, Texas, USA</p>
-        <p class="text-center">27°C - Sunny</p>
+
+        <div>
+          <h3 class="text-center">Current weather conditions</h3>
+          <p class="weather"><img id="current-weather-icon" src="#" alt="#"><span id="current-temp"></span> - <span id="current-weather-desc"></span></p>
+        </div>
+
+        <div>
+          <h3 class="text-center">Temperature Forecast</h3>
+          <div class="weather-forecast-container"></div>
+        </div>
       </section>
     </div>
 
-    <section id="spotlights" class="spotlights px-20">
-      <div class="card p-20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-      <div class="card p-20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-      <div class="card p-20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-    </section>
+    <section id="spotlights" class="spotlights px-20"></section>
   </main>
 
   <footer>
@@ -93,6 +97,9 @@
   </footer>
 
   <script src="scripts/main.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/banner.js"></script>
+  <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>

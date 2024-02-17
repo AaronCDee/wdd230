@@ -314,3 +314,49 @@ nav a:hover {
   align-items: center;
   padding: 1em;
 }
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather img {
+  width: 50px;
+  height: auto;
+}
+
+.weather-forecast-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1em;
+}
+
+.weather-forecast-card {
+  padding: 1em;
+  outline: 2px solid black;
+  border-radius: 1em;
+}
+
+.banner {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  padding: 1em;
+  text-align: center;
+  position: relative;
+}
+
+.banner button {
+  color: var(--secondary-color);
+  background-color: var(--accent2-color);
+  border: none;
+  position: absolute;
+  top: 2.5em;
+  right: 2em;
+}
+
+.banner button:hover {
+  cursor: pointer;
+}

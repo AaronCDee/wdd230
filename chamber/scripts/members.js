@@ -29,7 +29,7 @@ const displayMembers = (members) => {
               <p>Phone: ${member.phone}</p>
               <p>Membership level: ${member.membership_level}</p>
               <p class="other-info">Other Info: ${member.other_information}</p>
-              <a href="${member.website}">Website</a>
+              <a href="https://google.com" target="_blank">Website</a>
             </div>`
   }).join("");
 
