@@ -360,3 +360,7 @@ nav a:hover {
 .banner button:hover {
   cursor: pointer;
 }
+
+.nav-active {
+  background-color: var(--accent1-alpha);
+}
