@@ -6,7 +6,7 @@
       "phone": "555-123-4567",
       "website": "http://www.techinnovators.com",
       "image": "tech_innovators.svg",
-      "membership_level": "Platinum",
+      "membership_level": "Bronze",
       "other_information": "Leading the way in technological innovation."
     },
     {
@@ -60,7 +60,7 @@
       "phone": "555-321-0987",
       "website": "http://www.travelexplorers.com",
       "image": "travel_explorers.svg",
-      "membership_level": "Platinum",
+      "membership_level": "Bronze",
       "other_information": "Embarking on unforgettable journeys around the world."
     }
   ]
